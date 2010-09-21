@@ -1,0 +1,14 @@
+URLMatcher
+==========
+
+Simple utility class, feed it a url and it behaves like the native Location object.
+
+Usage
+-----
+
+var matcher = new URLMatcher('http://www.google.co.uk/search?client=safari&rls=en&q=url_matcher#first');
+matcher.protocol() //=> http:
+matcher.host() //=> www.google.co.uk
+matcher.pathname() //=> /search
+matcher.search() //=> ?client=safari&rls=en&q=url_matcher
+matcher.hash() //=> #first
